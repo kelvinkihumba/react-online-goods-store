@@ -1,0 +1,15 @@
+.product-list {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 1em;
+    padding: 2em;
+}
+
+.product-list-item img {
+    max-width: 100%;
+}
+
+.product-list-item img:hover {
+    cursor: pointer;
+    opacity: 0.80;
+}

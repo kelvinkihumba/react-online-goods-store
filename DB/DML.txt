@@ -1,0 +1,58 @@
+create database bird_and_bee;
+
+create table products (
+    product_id int AUTO_INCREMENT PRIMARY KEY,
+    product_name varchar(100), 
+    product_image varchar(100),
+    description varchar(500),
+    price float(5,2),
+    quantity_available int(10),
+    available_for_sale boolean, 
+    quantity_applies boolean 
+);
+
+
+create table customer (
+    id int NOT NULL AUTO_INCREMENT,
+    f_name varchar(100), 
+    l_name varchar(100),
+    email varchar(100), 
+    password varchar(100),
+    PRIMARY KEY (ID)
+);
+
++----+--------+--------+-------------------+-------------+
+| ID | f_name | l_name | email             | password    |
++----+--------+--------+-------------------+-------------+
+|  1 | Katie  | Tracy  | ktracy2@emich.edu | password123 |
++----+--------+--------+-------------------+-------------+
+
+//type 0 = standard, type 1 = special
+//status 0 = received, status 1 = completed, status 2 = delivered, status 3 = cancelled
+create table order (
+    order_no int NOT NULL AUTO_INCREMENT,
+    total int, 
+    customer_id int,
+    type int check(type between 0 and 1),
+    status int check(status between 0 and 3), 
+    PRIMARY KEY (order_no), 
+    FOREIGN KEY (customer_id) references customer(ID)
+);
+
+create table admins (
+    ID int AUTO_INCREMENT PRIMARY KEY, 
+    f_name varchar(50),
+    l_name varchar(50),
+    type varchar(10),
+    email varchar(50)
+);
+
++----+--------+---------+-------+-------------------------+------------+
+| ID | f_name | l_name  | type  | email                   | password   |
++----+--------+---------+-------+-------------------------+------------+
+|  1 | Katie  | Tracy   | Owner | birdandbee.kt@gmail.com | birdsRc00l |
+|  2 | Alyssa | Wickman | Admin | admin1@gmail.com        | pwd1       |
+|  3 | Kelvin | Kihumba | Admin | admin2@gmail.com        | pwd2       |
+|  4 | Katie  | Tracy   | Admin | admin3@gmail.com        | pwd3       |
++----+--------+---------+-------+-------------------------+------------+
+

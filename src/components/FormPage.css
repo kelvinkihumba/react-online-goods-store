@@ -1,0 +1,19 @@
+.form-page {
+    display: grid;
+    grid-template-columns: 1fr 4fr;
+    gap: 1em;
+    max-width: 60%;
+    margin: auto;
+    text-align: start;
+}
+
+.form-page button {
+    grid-column-start: 2;
+    grid-column-end: 3;
+}
+
+.form-page > a:hover {
+    color: var(--light-grey-color);
+    cursor: pointer;
+  }
+  

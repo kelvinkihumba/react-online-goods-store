@@ -1,0 +1,33 @@
+
+.addItemForm label {
+        float: left;
+        clear: left;
+        text-align: left;
+}
+
+.additem input, textarea {
+        float: right;    
+}
+
+.additem {
+        margin-left: auto;
+        margin-right: auto;
+}
+
+.additem .rows {
+        display: flex;
+        align-items: center;
+        align-self: flex-end; 
+        margin-bottom: 10px;
+        gap: 5px;
+}
+
+.additem .flex {
+        display: flex;
+        flex-direction: column;
+}
+
+.rows .input {
+        align-self: flex-end;
+}
+

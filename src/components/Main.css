@@ -1,0 +1,64 @@
+.main {
+    grid-area: main;
+    display: grid;
+    grid-template-columns: 20% auto 20%;
+    padding: 15px 5px 10px 5px;
+    background-color: var(--main-bg-color);
+}
+
+.main .left-pane,
+.main .right-pane {
+    padding: 1em;
+}
+
+.main .left-pane {
+    border-right: 2px solid var(--dark-grey-color);
+}
+
+.left-pane img {
+    max-width: 100%;
+}
+
+.left-pane p,
+.right-pane p {
+    text-align: left;
+}
+
+.main .right-pane {
+    border-left: 2px solid var(--dark-grey-color);
+}
+
+.map {
+    width: 100%;
+    height: 50vh;
+}
+
+.pin {
+    display: flex;
+    align-items: center;
+    width: 180px;
+}
+
+.pin-icon {
+    /* Fix for the marker moving around the screen taken from https://stackoverflow.com/a/75781548
+       For some reason, the marker is rendered so that the top left of the marker is on the lat/lng
+       location instead of the bottom middle of the marker. This re-positions it to have the bottom
+       middle on the lat lng spot.
+    */
+    width: 30px;
+    height: 30px;
+    position: relative;
+    top: -30px;
+    left: -15px;
+}
+
+.pin-text {
+    position: relative;
+    top: -60px;
+    left: -70px;
+    font-size: 1em;
+}
+
+.pin-text > p {
+    margin: 0;
+}

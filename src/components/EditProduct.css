@@ -1,0 +1,33 @@
+.editPage {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    max-width: 90%;
+    margin-top: 2em;
+}
+
+.editPage h1 {
+    font-size: 5;
+}
+
+.editPage img {
+    max-width: 50%;
+    padding: 0;
+}
+
+.description {
+    height:200px;
+}
+
+.editForm {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    gap: 1em;
+}
+
+.editForm textarea {
+    height: 100px;
+}
+
+.editForm button {
+    grid-column-start: 2;
+}

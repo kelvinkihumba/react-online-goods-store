@@ -1,0 +1,30 @@
+.addAdmin label {
+    float: left;
+    clear: left;
+    width: 250px;
+    text-align: left;
+}
+
+.addAdmin input {
+    float: center;
+    
+}
+
+.addAdmin div {
+        padding: 1%;
+}
+
+.addadmin {
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.addadmin .rows {
+    display:flex;
+    align-items: center;
+}
+
+.addadmin .row {
+    display:flex;
+    align-items: center;
+}

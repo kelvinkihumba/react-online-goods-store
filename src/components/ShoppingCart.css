@@ -1,0 +1,84 @@
+.shopping-cart {
+    width: 90%;
+    max-width: 60rem;
+    margin: auto;
+    margin-bottom: 5em;
+}
+
+.shopping-cart .dots {
+    border-bottom: 2px dotted #665a5d;
+    margin: 1em 1.5em 0 1.5em;
+}
+
+.shopping-cart button {
+    margin-top: 2em;
+    margin-left: auto;
+    margin-right: 0;
+    width: 15em;
+}
+
+.shopping-cart .paypal {
+    margin-top: 2em;
+}
+
+.cart-item {
+    display: grid;
+    grid-template-columns: 5em 20em 12em auto 5em;
+    align-items: center;
+    margin-bottom: 1em;
+}
+
+.cart-item img {
+    max-width: 100%;
+}
+
+.cart-item form {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 1em;
+}
+
+.cart-item p.quantity {
+    margin-bottom: 0.7em;
+    text-align: left;
+}
+
+.cart-item svg {
+    color: #be1818;
+}
+.cart-item svg:hover {
+    cursor: pointer;
+}
+
+.cart-bottom-row {
+    display: grid;
+    grid-template-columns: 5em 30em auto 5em 5em;
+}
+
+.cart-bottom-row p {
+    display: flex;
+    align-items: flex-end;
+    margin-bottom: 0;
+}
+
+.select-delivery {
+    display: grid;
+    grid-template-columns: 5em 18em auto 5em;
+    align-items: center;
+}
+
+.select-delivery p {
+    margin: 0;
+    text-align: left;
+}
+
+.delivery {
+    display: flex;
+    gap: 2em;
+    margin-top: 1em;
+    margin-left: 3em;
+}
+.delivery input {
+    width: 20em;
+}

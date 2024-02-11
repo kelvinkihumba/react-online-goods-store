@@ -1,0 +1,115 @@
+:root {
+  --dark-bg-color: #231f20;
+  --pink-bg-color: #cd5c5c;
+  --main-bg-color: #e8e4d9;
+  --offwhite-color: #fffbf0;
+  --dark-grey-color: #282828;
+  --light-grey-color: #bebebe;
+}
+
+body {
+  margin: 0;
+  color: var(--dark-bg-color);
+  font-family: 'Open Sans', sans-serif;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'Montserrat', sans-serif;
+}
+
+hr {
+  border: none;
+  height: 2px;
+  background: #4e4e4e;
+}
+
+button {
+  display: block;
+  background-color: var(--dark-bg-color);
+  color: var(--offwhite-color);
+  padding: 1em;
+  font-size: 1.1em;
+  border: none;
+  width: 100%;
+  margin-bottom: 1em;
+}
+
+button:hover {
+  cursor: pointer;
+  color: var(--pink-bg-color);
+  background-color: var(--dark-grey-color);
+}
+
+input, textarea, select {
+  padding: 0.5em;
+  border: 1px solid var(--light-grey-color);
+}
+
+textarea {
+  font-family: inherit;
+  margin-left: 0;
+}
+
+input::placeholder, textarea::placeholder {
+  font-weight: 400;
+  color: var(--light-grey-color);
+}
+
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+/* Main Page Layout */
+.App {
+  height: 100vh;
+  display: grid;
+  grid-template-rows: auto 1fr auto;
+  grid-template-columns: 1fr;
+  grid-template-areas: 
+    'header'
+    'main'
+    'footer';
+}
+
+.header {
+  grid-area: header;
+}
+
+.footer {
+  grid-area: footer;
+}

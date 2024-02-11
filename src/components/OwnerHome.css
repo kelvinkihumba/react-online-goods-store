@@ -1,0 +1,16 @@
+.owner-home .add-button {
+  width: 50%;
+  margin: auto;
+}
+
+.admintable {
+    border-collapse: collapse;
+    margin: 2em auto 2em auto;
+    width: 50%;
+}
+
+.admintable td, th {
+    border: 1px solid #dddddd;
+    text-align: left;
+    padding: 8px;
+}

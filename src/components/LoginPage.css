@@ -1,0 +1,31 @@
+.login-page {
+    display: grid;
+    grid-template-columns: 1fr 4fr;
+    gap: 1em;
+    max-width: 60%;
+    margin: auto;
+    text-align: start;
+}
+
+.login-page #login {
+    grid-column-start: 3;
+    grid-column-end: 4;
+}
+
+
+.login-page > a {
+    text-decoration: none;
+}
+
+.login-page > a:hover {
+    color: var(--light-grey-color);
+    cursor: pointer;
+}
+
+.login .other-buttons {
+    display: grid;
+    grid-template-columns: 1fr 4fr;
+    gap: 1em;
+    max-width: 60%;
+    margin: auto;
+}

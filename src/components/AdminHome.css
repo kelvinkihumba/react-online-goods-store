@@ -1,0 +1,36 @@
+.admin-home {
+    width: 90%;
+    margin: auto;
+}
+
+.admin-home button {
+    width: 50%;
+    margin: auto;
+}
+
+.admin-home .table {
+    font-family: arial, sans-serif;
+    border-collapse: collapse;
+    width: fit-content;
+    margin:1em;
+}
+
+.admin-home th {
+  background-color: var(--dark-bg-color);
+  color: var(--offwhite-color);
+}
+
+.admin-home .list td, th {
+    border: 1px solid #dddddd;
+    text-align: left;
+    padding: 8px;
+}
+
+.admin-home .list tr:hover{
+    background-color: var(--pink-bg-color);
+    cursor: pointer;
+}
+
+.admin-home .list img {
+    width: 100%;
+}
